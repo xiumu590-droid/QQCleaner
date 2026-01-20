@@ -12,7 +12,7 @@ abstract class BaseHook {
     companion object {
         private val hooks: Array<BaseHook> = arrayOf(
             ContextHook,
-            EntryHook,
+            EntryHook,   // 保证这里存在即可
         )
 
         fun initHooks() {
@@ -27,6 +27,3 @@ abstract class BaseHook {
         }
     }
 }
-
-
-
